@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Yoga</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+   
+</head>
+
+<div class="background-menu">
+        <div class="logo">
+            <img src="images/rootyogalogo_1e18237d-dd72-4ebf-a773-38ae3d127590.png" alt="Logo">
+        </div>
+
+           <!-- Botón de menú para móviles -->
+           <button class="menu-toggle" id="menuToggle"> &#9776; </button>
+
+           <!-- Menú de navegación -->
+           <ul class="nav-links" id="navLinks">
+               <li><a href="#home">Inicio</a></li>
+               <li><a href="#clases">Clases</a></li>
+               <li><a href="#faq">Preguntas Frecuentes</a></li>
+               <li><a href="#contacto">Contacto</a></li>
+           </ul>
+       </div>
+
+       
+
+</div>
+<body>
+
+    
+    <section id="home" class="home">
+        <h1>Ashtanga Vinyasa Yoga</h1>
+        <p class="ubicacion-home">Rincón de Milberg, Tigre</p>
+        <p class="precenciales-home">Clases presenciales</p>
+        <div class="center-button">
+            <a href="#faq"> <button> Más info</button></a>
+         </div>
+    </section>
+    
+    
+    
+    <section id="faq" class="preguntas-frecuentes">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <div class="faq-question">¿Que es el Ashtanga Vinyasa?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="padding-left: 10px; max-width: 15px;"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+            <div class="faq-answer">Ashtanga significa 8 pasos o caminos que conducen al estado del yoga, la union con uno mismo.</div>
+            
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Que son las clases Mysore de Ashtanga?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="padding-left: 10px; max-width: 15px;"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+            <div class="faq-answer">Las clases de estilo Mysore son las mas recomendadas para empezar a aprender la practica. Al iniciar aprendes de manera progresiva las posturas de la primer serie. Se va memorizando la secuencia de a poco, ded esa forma una vez aprendida entras en una meditacion en movimiento donde podes enfocarte en aspectos como la respiracion, conciencia corporal, concentracion y autoconocimiento.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Necesito tener experiencia?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="padding-left: 10px; max-width: 15px;"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+            <div class="faq-answer">¡No! En el mismo grupo, pueden estar alumnos de todos los niveles, el trabajo es individual.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Cuanto dura la clase?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="padding-left: 10px; max-width: 15px;"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
+            <div class="faq-answer">Las primeras clases en general son breves (max 1hr) con el tiempo y a medida que tu practica avance se extendera en duracion, esto va a variar segun tu practica. En general dura en total una hora y media o 2hs dependiendo la persona.</div>
+        </div>
+    </section>
+ 
+
+    <section id="lifestyle" class="lifestyle">
+        <h2>Beneficios</h2>
+        <div class="lifestyle-container">
+            <div class="lifestyle-item">
+                <div class="lifestyle-circle">
+                    <h3>RESPIRACION</h3>
+                    <img src="images/beneficio-icono-2.png" alt="">
+                </div>
+              
+            </div>
+            <div class="lifestyle-item">
+                <div class="lifestyle-circle">
+                    <h3 style="word-wrap: break-word;">CONCIENCIA CORPORAL</h3>
+                    <img src="images/beneficio-icono-3.png" alt="">
+                </div>
+                
+            </div>
+            <div class="lifestyle-item">
+                <div class="lifestyle-circle">
+                    <h3>CONCENTRACION</h3>
+                    <img src="images/beneficio-icono-4.png" alt="">
+                </div>
+              
+            </div>
+            <div class="lifestyle-item">
+                <div class="lifestyle-circle">
+                    <h3>AUTOCONOCIMIENTO</h3>
+                    <img src="images/beneficio-icono.png" alt="">
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="horarios" id="horarios-bandera">
+        <h2>Horarios</h2>
+        <div class="tabla-horarios">
+          <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>08:00 AM</th>
+                <th>09:00 AM</th>
+                <th>10:00 AM</th>
+                <th>11:00 AM</th>
+                <th>12:00 PM</th>
+                <th>01:00 PM</th>
+                <th>02:00 PM</th>
+                <th>03:00 PM</th>
+                <th>04:00 PM</th>
+                <th>05:00 PM</th>
+                <th>06:00 PM</th>
+                <th>07:00 PM</th>
+                <th>08:00 PM</th>
+                <th>09:00 PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Martes</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="horario-movil">
+            <div class="horario-item">
+                <h3>Martes</h3>
+                <p>08:00 - 10:30 AM</p>
+            </div>
+            <div class="horario-item">
+                <h3>Jueves</h3>
+                <p>19:00 - 21:30 PM</p>
+            </div>
+            <div class="horario-item">
+                <h3>Viernes</h3>
+                <p>19:00 - 21:30 PM</p>
+            </div>
+            <div class="horario-item">
+                <h3>Sábado</h3>
+                <p>No hay horarios disponibles.</p>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Teléfono</h3>
+                <p><a href="https://wa.me/+541168481702?" target="_blank">11-6848-1702</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:contacto@ashtangayoga.com">contacto@ashtangayoga.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Redes Sociales</h3>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/root.ashtangayoga/?hl=es-la" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me/+541168481702?" target="_blank">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

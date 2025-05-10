@@ -1,0 +1,581 @@
+/* Variables */
+:root {
+  --primary: #248580;
+  --secondary: #8a9a5b;
+  --accent: #551f55;
+  --background: #f4f4f4;
+  --text-dark: #333;
+  --text-light: #fff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 10px;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+/* Navegación */
+.background-menu {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 85px;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: var(--border-radius);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 240px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-size: 24px;
+  z-index: 1001;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links li a:hover {
+  font-weight: 700;
+}
+
+/* Sección Hero */
+.home {
+  background: url("images/arbolhome.png") no-repeat center center / cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-light);
+  position: relative;
+}
+
+.home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.home h1,
+.home p,
+.home .center-button {
+  position: relative;
+  z-index: 2;
+}
+
+.home h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.ubicacion-home {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.precenciales-home {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.center-button button {
+  padding: 15px 35px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.center-button button:hover {
+  background-color: #1c1b1b;
+  transform: translateY(-3px);
+}
+
+/* Sección FAQ */
+.faq-container {
+  background-color: var(--secondary);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.faq-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-question .chevron {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.faq-answer.active {
+  max-height: 500px;
+  padding-bottom: 15px;
+}
+
+.faq-answer p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Sección Beneficios */
+.lifestyle {
+  background-color: var(--background);
+  text-align: center;
+}
+
+.lifestyle h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.lifestyle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.lifestyle-item {
+  width: 200px;
+}
+
+.lifestyle-circle {
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.circle-front,
+.circle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.circle-front {
+  background-color: var(--primary);
+  color: var(--text-light);
+  transform: rotateY(0deg);
+}
+
+.circle-back {
+  background-color: var(--primary);
+  transform: rotateY(180deg);
+}
+
+.circle-back img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.lifestyle-circle.flipped .circle-front {
+  transform: rotateY(180deg);
+}
+
+.lifestyle-circle.flipped .circle-back {
+  transform: rotateY(0deg);
+}
+
+/* Sección Horarios */
+.horarios {
+  background-color: var(--background);
+  text-align: center;
+}
+
+.horarios h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.tabla-horarios {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.tabla-horarios table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla-horarios th {
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
+
+.tabla-horarios td:first-child {
+  font-weight: bold;
+  background-color: #e9e9e9;
+}
+
+.horario-movil {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.horario-item {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  border-left: 5px solid var(--secondary);
+}
+
+.horario-item h3 {
+  color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+/* Sección Contacto */
+.contacto {
+  background-color: var(--accent);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-item {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #035cbb;
+  color: var(--text-light);
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.contact-link:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #035cbb;
+  color: var(--text-light);
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.social-link:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+}
+
+.icon {
+  display: inline-block;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .logo img {
+    max-width: 180px;
+  }
+
+  .lifestyle-circle {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: 20rem;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 26px;
+  }
+
+  .ubicacion-home {
+    font-size: 22px;
+  }
+
+  .precenciales-home {
+    font-size: 18px;
+  }
+
+  .faq-container h2,
+  .lifestyle h2,
+  .horarios h2,
+  .contacto h2 {
+    font-size: 2rem;
+  }
+
+  .tabla-horarios {
+    display: none;
+  }
+
+  .horario-movil {
+    display: flex;
+  }
+
+  .lifestyle-circle {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .social-text {
+    display: none;
+  }
+
+  .social-link {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-menu {
+    height: 70px;
+    width: 330px;
+    margin-left: -5px;
+  }
+
+  .menu-toggle{
+    margin-right: -80px;
+  }
+
+  
+    .nav-links {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 5px;
+    width: 20rem;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2px;
+    z-index: 1000;
+  }
+
+
+  .logo img {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+
+  .lifestyle-circle {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .lifestyle-circle h3 {
+    font-size: 0.9rem;
+  }
+
+  .contact-link {
+    padding: 10px 20px;
+  }
+}
